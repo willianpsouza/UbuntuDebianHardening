@@ -90,6 +90,19 @@ EOF
 systemctl restart systemd-resolved
 
 ############################
+# QEMU Guest Agent
+############################
+echo "==> Instalando e ativando qemu-guest-agent"
+
+if ! dpkg -l | grep -q qemu-guest-agent; then
+    apt-get update
+    apt-get install -y qemu-guest-agent
+fi
+
+systemctl enable qemu-guest-agent
+systemctl start qemu-guest-agent
+
+############################
 # Status final
 ############################
 echo
@@ -98,7 +111,14 @@ echo " STATUS FINAL"
 echo "=============================="
 
 timedatectl status | grep -E "Time zone|NTP service"
+
+echo
+echo "--- DNS ---"
 resolvectl status | head -20
+
+echo
+echo "--- QEMU Guest Agent ---"
+systemctl status qemu-guest-agent --no-pager || true
 
 echo
 echo "✅ Configuração concluída."
