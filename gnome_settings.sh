@@ -20,5 +20,5 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,m
 gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
 
 
-sudo apt install preload
-sudo apt install ubuntu-restricted-extras
+sudo apt -y install preload
+sudo apt -y install ubuntu-restricted-extras
