@@ -24,7 +24,7 @@ curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening
 
 
 --
-- **Install Docker Server
+- **Install Auto Update
 ```bash
 curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening/refs/heads/main/autoupdate.sh | sudo /usr/bin/env bash
 
