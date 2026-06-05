@@ -20,3 +20,12 @@ curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening
 curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening/refs/heads/main/docker-install.sh | sudo /usr/bin/env bash
 
 ```  
+
+
+
+--
+- **Install Docker Server
+```bash
+curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening/refs/heads/main/autoupdate.sh | sudo /usr/bin/env bash
+
+```  
