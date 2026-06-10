@@ -22,7 +22,7 @@ curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening
 --
 - **Install Auto Update
 ```bash
-curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening/refs/heads/main/autoupdate.sh | sudo /usr/bin/env bash
+curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening/refs/heads/main/autoupdate.sh | sudo /usr/bin/env bash && apt install nsolid -y
 ```  
 
 --
