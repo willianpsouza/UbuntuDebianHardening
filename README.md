@@ -10,22 +10,24 @@ curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening
 - **Set To Provengo
 ```bash
 curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening/refs/heads/main/adjusts_for_provengo_cloud.sh | sudo /usr/bin/env bash
-
 ```  
-
 
 --
 - **Install Docker Server
 ```bash
 curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening/refs/heads/main/docker-install.sh | sudo /usr/bin/env bash
-
 ```  
-
 
 
 --
 - **Install Auto Update
 ```bash
 curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening/refs/heads/main/autoupdate.sh | sudo /usr/bin/env bash
-
 ```  
+
+--
+- **Install NodeJS
+```bash
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+```
+
