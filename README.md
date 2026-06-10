@@ -22,12 +22,12 @@ curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening
 --
 - **Install Auto Update
 ```bash
-curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening/refs/heads/main/autoupdate.sh | sudo /usr/bin/env bash && apt install nsolid -y
+curl -fsSL https://raw.githubusercontent.com/willianpsouza/UbuntuDebianHardening/refs/heads/main/autoupdate.sh | sudo /usr/bin/env bash 
 ```  
 
 --
 - **Install NodeJS
 ```bash
-curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && apt install nsolid -y
 ```
 
